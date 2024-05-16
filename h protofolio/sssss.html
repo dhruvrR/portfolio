@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <h2>Main Content Area</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec odio sit amet nisi convallis tincidunt. Vestibulum accumsan neque at sapien semper consequat. Integer sagittis luctus elit, et ultricies tortor facilisis et. Sed sollicitudin nunc et ante sagittis, eget efficitur mi sodales. Donec vestibulum hendrerit congue. Proin eget urna vel odio lobortis tincidunt. Curabitur rutrum purus nec justo iaculis aliquet.</p>
+            <!-- Add more content here to enable scrolling -->
+        </div>
+        <div class="col-md-4 as-sidebar-layout" id="sidebar-lay">
+            <div class="as-sidebar" id="sticky-sidebar">
+                <span class="as-heading sidebar_margin">Start Accepting<br> Payments Today.</span>
+                <div class="as-separator"></div>
+                <a target="_blank" href="https://secureglobalpay.dev/merchant-application/" class="as-button" id="apply">
+                    <i class="as-icons fl-button-icon fl-button-icon-before far fa-hand-point-right" aria-hidden="true"></i>
+                    Apply Now!</a>
+                <div class="as-separator"></div>
+                <div class="space-im"></div>
+                <img alt="test" class="as-logo" src="/wp-content/uploads/SGP-merchant-services.jpg" alt="" height="65"
+                    width="200" title="">
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    /* Add this CSS to your existing CSS file or style tag */
+#sticky-sidebar {
+    position: sticky;
+    top: 90px; /* Adjust as needed */
+    z-index: 999;
+}
+body{
+    height: 300vh;
+}
+
+</style>
+
+<script>
+    window.addEventListener('scroll', function() {
+    var sidebar = document.getElementById('sidebar-lay');
+    if (window.scrollY > 90) {
+        sidebar.classList.add('sticky');
+    } else {
+        sidebar.classList.remove('sticky');
+    }
+});
+
+</script>
